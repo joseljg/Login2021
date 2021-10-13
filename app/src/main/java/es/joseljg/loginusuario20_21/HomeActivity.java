@@ -22,8 +22,18 @@ public class HomeActivity extends AppCompatActivity {
         {
             String email = intent.getStringExtra(MainActivity.EXTRA_EMAIL1);
             String password = intent.getStringExtra(MainActivity.EXTRA_PASSWORD1);
-            txt_email.setText(email);
-            Toast.makeText(this,"BUENOS DIAS "+ email, Toast.LENGTH_LONG).show();
+            if(email!=null && password!=null) {
+                // aqui vengo del logueo del usuario
+                txt_email.setText(email);
+                Toast.makeText(this, "BUENOS DIAS " + email, Toast.LENGTH_LONG).show();
+            }
+            else{
+                // aqui vengo del registro del usuario
+                Usuario u = (Usuario) intent.getSerializableExtra(RegistroActivity.EXTRA_OBJETO_USUARIO);
+                if(u!=null) {
+                    Toast.makeText(this, "BUENOS DIAS " + u.toString(), Toast.LENGTH_LONG).show();
+                }
+            }
         }
         else{
          //   Toast.makeText(this,"debes loguearte ", Toast.LENGTH_LONG).show();

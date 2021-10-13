@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Login Usuario 20_21</string>
+    <string name="registro">Registro</string>
+    <string name="nombre">Nombre</string>
+    <string name="direccion">Direccion</string>
+    <string name="telefono">telefono</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="registrar">Registrar</string>
 </resources>

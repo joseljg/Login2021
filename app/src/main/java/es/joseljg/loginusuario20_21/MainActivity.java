@@ -64,4 +64,9 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
+
+    public void ir_a_registrarse(View view) {
+        Intent intent = new Intent(this,RegistroActivity.class);
+        startActivity(intent);
+    }
 }
